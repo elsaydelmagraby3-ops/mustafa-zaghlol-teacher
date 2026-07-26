@@ -1420,6 +1420,7 @@
                             <option value="الصف الأول الإعدادي">الأول الإعدادي</option>
                             <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                             <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                            <option value="أولى ثانوي">أولى ثانوي</option>
                         </select>
                         <select id="filter-gender" onchange="window.filterStudents()">
                             <option value="">كل الأنواع</option>
@@ -1484,6 +1485,7 @@
                             <option value="الصف الأول الإعدادي">الأول الإعدادي</option>
                             <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                             <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                            <option value="أولى ثانوي">أولى ثانوي</option>
                         </select>
                     </div>
                 </div>
@@ -1554,6 +1556,7 @@
                             <option value="الصف الأول الإعدادي">الأول الإعدادي</option>
                             <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                             <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                            <option value="أولى ثانوي">أولى ثانوي</option>
                         </select>
                         <select id="att-log-filter-subject" onchange="window.filterAttendanceLog()">
                             <option value="">جميع المواد</option>
@@ -1753,6 +1756,7 @@
                             <option value="الصف الأول الإعدادي">الأول الإعدادي</option>
                             <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                             <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                            <option value="أولى ثانوي">أولى ثانوي</option>
                         </select>
                         <select id="results-filter-status" onchange="window.filterResultsTable()">
                             <option value="all">جميع الحالات</option>
@@ -1862,6 +1866,7 @@
                         <option value="الصف الأول الإعدادي">الصف الأول الإعدادي</option>
                         <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                         <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                        <option value="أولى ثانوي">أولى ثانوي</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -1929,6 +1934,7 @@
                         <option value="الصف الأول الإعدادي">الصف الأول الإعدادي</option>
                         <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                         <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                        <option value="أولى ثانوي">أولى ثانوي</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -1985,6 +1991,7 @@
                         <option value="الصف الأول الإعدادي">الصف الأول الإعدادي</option>
                         <option value="الصف الثاني الإعدادي">الثاني الإعدادي</option>
                         <option value="الصف الثالث الإعدادي">الثالث الإعدادي</option>
+                        <option value="أولى ثانوي">أولى ثانوي</option>
                     </select>
                 </div>
 
@@ -2761,7 +2768,8 @@ const firebaseConfig = {
                     currentPrices = {
                         "الصف الأول الإعدادي": 100,
                         "الصف الثاني الإعدادي": 100,
-                        "الصف الثالث الإعدادي": 120
+                        "الصف الثالث الإعدادي": 120,
+                        "أولى ثانوي": 140
                     };
                 }
             } catch (e) {
@@ -2769,7 +2777,8 @@ const firebaseConfig = {
                 currentPrices = {
                     "الصف الأول الإعدادي": 100,
                     "الصف الثاني الإعدادي": 100,
-                    "الصف الثالث الإعدادي": 120
+                    "الصف الثالث الإعدادي": 120,
+                    "أولى ثانوي": 140
                 };
             }
         }
@@ -4917,6 +4926,7 @@ const firebaseConfig = {
         window.nextPage = nextPage;
 
         console.log("✅ لوحة التحكم جاهزة للعمل - نظام نتائج الامتحانات محدث بالكامل");
+        console.log("✅ تم إضافة صف 'أولى ثانوي' إلى النظام بالكامل");
     </script>
 </body>
 </html>
