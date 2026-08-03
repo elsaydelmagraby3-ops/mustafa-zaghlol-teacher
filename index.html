@@ -2574,20 +2574,16 @@ const firebaseConfig = {
             return lastClassTime;
         }
 
-        function getAttendanceCloseTime() {
-            const lastClass = getClassScheduleForToday();
-            if (!lastClass) return null;
-            
-            let closeHour = lastClass.hour + 1;
-            let closeMinute = lastClass.minute + 30;
-            
-            if (closeMinute >= 60) {
-                closeHour += 1;
-                closeMinute -= 60;
-            }
-            
-            return { hour: closeHour, minute: closeMinute };
-        }
+       function getAttendanceCloseTime() {
+    const lastClass = getClassScheduleForToday();
+    if (!lastClass) return null;
+
+    // يغلق الحضور يوميًا الساعة 6:00 مساءً
+    return {
+        hour: 18,
+        minute: 0
+    };
+}
 
         function isAttendanceOpen() {
             const now = new Date();
